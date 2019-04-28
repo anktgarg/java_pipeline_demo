@@ -15,3 +15,11 @@ echo "M2_HOME = ${M2_HOME}"
 '''
 }
 }
+stage ('Build project') {
+steps {
+dir("java_web_code"){
+sh 'mvn clean verify
+ 
+}
+}
+}
